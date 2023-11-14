@@ -1,0 +1,511 @@
+/* Estilo do corpo da página */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+.header {
+  background: #292929;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo-text {
+  text-transform: capitalize;
+  background: #2ecc71;
+  font-size: 36px;
+  margin: 0;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Estilo da imagem de cabeçalho */
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo do menu de navegação */
+.header__nav {
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+.header__nav a:hover {
+  color: #2ecc71;
+}
+
+.header__nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav li {
+  margin-right: 20px;
+}
+
+.header__nav li:last-child {
+  margin-right: 0;
+}
+
+/* Estilo da seção de boas-vindas */
+section {
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.music__headline {
+  font-size: 36px;
+  color: #2ecc71;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.highlights li {
+  flex: 0 0 30%;
+  margin: 10px;
+}
+
+.highlights a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+}
+
+.highlights p {
+  color: #333;
+  text-align: center;
+}
+
+.highlights a:hover {
+  text-decoration: underline;
+}
+
+/* Adicione este estilo para o novo código HTML da página de contato */
+section {
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 24px;
+}
+
+section p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo do formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Estilo do rodapé da página de contato */
+footer {
+  background: #292929;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+
+footer h2 {
+  font-size: 24px;
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* ou inline-flex */
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer li {
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #2ecc71;
+}
+
+
+/* Adicione este estilo para o novo código HTML */
+.artist-profile {
+  position: relative;
+  overflow: hidden;
+}
+
+.artist-profile a {
+  display: block;
+  position: relative;
+}
+
+.artist-profile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+/* Estilo para a sobreposição (overlay) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente */
+  color: #ffffff; /* Cor do texto preto para melhor visibilidade */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.artist-profile:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.artist-profile p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.artist-profile p.overlay-text {
+  color: #ffffff; /* Cor branca para o primeiro parágrafo */
+}
+
+.music-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.music-article {
+  text-align: center;
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: 20px auto; /* Centraliza o elemento na página e adiciona margens superior e inferior */
+}
+
+.music-image {
+  width: 100%; /* Ajusta a largura para ocupar 100% da largura do elemento pai */
+  height: auto;
+  border-radius: 8px; /* Adiciona borda arredondada para estética */
+}
+
+
+
+.article-title {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.article-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.music-image_art {
+  text-align: center;
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: 20px auto; /* Centraliza o elemento na página e adiciona margens superior e inferior */
+}
+
+.music-image_art {
+  width: 100%; /* Ajusta a largura para ocupar 100% da largura do elemento pai */
+  height: auto;
+  border-radius: 8px; /* Adiciona borda arredondada para estética */
+}
+
+/* Adicione estas regras ao seu CSS existente */
+
+.album-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.album-list li {
+  text-align: center;
+  width: 30%; /* Ajuste conforme necessário */
+  margin: 10px;
+}
+
+.album-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.shows-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.shows-section h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.shows-section p {
+  color: #555;
+  font-size: 16px; /* Defina o tamanho da fonte para o parágrafo */
+}
+
+.shows-section a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.shows-section a:hover {
+  background-color: #2ecc71;
+}
+
+/* Adicione estilos para o link dentro do parágrafo */
+.shows-section p a {
+  font-size: 16px; /* Defina o tamanho da fonte para o link dentro do parágrafo */
+}
+
+/* Estilos para a classe 'noticia' */
+.noticia {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.noticia h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+.noticia p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para a classe 'content' */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  color: #333;
+  font-size: 28px;
+}
+
+.content p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.news-title {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.noticia-imagem {
+  max-width: 100%; /* Define a largura máxima como 100% da largura do contêiner pai */
+  height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção original */
+  display: block; /* Remove qualquer espaçamento extra abaixo da imagem */
+  margin: 10px auto; /* Adiciona margem para centralizar a imagem e fornecer algum espaçamento */
+}
+
+/* Adicione uma regra CSS para as imagens dentro da lista */
+.album-image {
+  width: 100%; /* Ajusta a largura para ocupar 100% do contêiner */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block;
+  object-fit: cover; /* Evita que as imagens fiquem distorcidas */
+}
+
+/* Estilos adicionais para melhorar o layout */
+section {
+  text-align: center;
+}
+
+.album-list {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Torna os itens da lista em linha */
+  justify-content: space-around; /* Distribui o espaço entre os itens */
+}
+
+.album-item {
+  width: 200px; /* Define uma largura fixa para cada item da lista */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior entre os itens da lista */
+}
+
+/* Adicione estilos para as novas classes */
+.artista-title {
+  font-size: 24px;
+}
+
+.artista-description {
+  font-size: 16px;
+}
+
+.ver-albuns-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.ver-albuns-link:hover {
+  background-color: #2ecc71;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+
+
+
+
